@@ -42,13 +42,13 @@
         <property name="gupao" value="666"/>
     </objectFactory>-->
 
-<!--    <plugins>
-        <plugin interceptor="com.gupaoedu.interceptor.SQLInterceptor">
-            <property name="gupao" value="betterme" />
+    <plugins>
+        <plugin interceptor="com.qinfengsa.mybatis.domain.interceptor.MyPageInterceptor">
         </plugin>
-        <plugin interceptor="com.gupaoedu.interceptor.MyPageInterceptor">
+        <plugin interceptor="com.qinfengsa.mybatis.domain.interceptor.MySqlInterceptor">
         </plugin>
-    </plugins>-->
+    </plugins>
+
 
     <environments default="development">
         <environment id="development">
